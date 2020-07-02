@@ -1,0 +1,160 @@
+.navbar {
+    width: 100%;
+    background-color: #555555;
+    overflow: auto;
+  }
+
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+  /* @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }   */
+
+  .sidebar {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 20;
+    left: 10;
+    background-color: #555555;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  
+  .sidebar a {
+    /* padding: 6px 8px 6px 16px; */
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding : 15px;
+    float: left;
+  }
+  
+  .sidebar a:hover {
+    background-color : black;
+  }
+  
+  .main {
+    margin-left: 300px; /* Same as the width of the sidenav */
+    padding: 0px 5px;
+  }
+/* .mat-sidenav-container.mat-sidenav.mat-nav-list a
+{
+  background: #555555;
+
+} */
+  .mat-toolbar{
+    width: 100%;
+    overflow:auto;
+  }
+  .mat-toolbar.primary {
+    background: #555555; 
+    color: #fff;
+  }
+
+
+  .mat-toolbar a:hover {
+    background-color: #000;
+  }
+.mat-sidenav{
+  background-color: white;
+  width: 50px;
+
+}
+.sidenav-container
+{
+  height: 100%
+}
+
+/* .sidenav-container .sidenav {
+  width: 300px;
+  background-color: #fff;
+  /* box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); 
+} */
+
+/* .sidenav-container {
+  height: 100%;
+} */
+
+
+
+/* .mat-sidenav .mat-nav-list a:hover{
+
+   background-color: darkgrey; 
+  text-decoration-color: white;
+
+} */
+
+.example-icon
+{
+  padding : 6px 10px;
+}
+
+.example-spacer
+{
+  flex : 1 1 auto;
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(100, 0, 0);
+  }  */
+
+ 

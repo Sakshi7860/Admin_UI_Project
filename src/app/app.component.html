@@ -1,0 +1,83 @@
+<!-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+  <div class="collapse navbar-header">
+  <ul class="nav navbar-nav">
+    <li><a routerLink="/" >RecNames</a></li>
+    <li><a routerLink="/EztopsOffset">EztopsOffset</a></li>
+    <li><a routerLink="/BrokrecsAccount">Brokrecs Account</a></li>
+    <li style="float:right"><a  href="/logout">Logout</a></li>
+    <li style="float:right"><a href="/login"><i class="fa fa-fw fa-user"></i>Login </a> </li>
+    
+  </ul>
+</div>
+</div>
+
+</nav> -->
+
+
+<!-- ----------------------------- -->
+<!-- <div class="navbar">
+  <a routerLink="/" class="active" >RecNames</a>
+  <a routerLink="/EztopsOffset">EztopsOffset</a>
+  <a routerLink="/BrokrecsAccount">Brokrecs Account</a>
+  <a  href="/logout" style="float:right">Logout</a>
+  <a href="/login" style="float:right"><i class="fa fa-fw fa-user"></i>Login </a>
+</div>
+
+<div class="sidebar">
+  <a href="add" ><mat-icon matTooltip="Add">add</mat-icon></a>
+  <a href="edit"><mat-icon matTooltip="Edit">edit</mat-icon></a>
+  <a href="update" matTooltip="Update"><mat-icon>update</mat-icon></a>
+  <a href="delete" matTooltip="delete"><mat-icon>delete</mat-icon></a>
+</div>
+
+<div class="row">
+      <router-outlet></router-outlet>
+</div> -->
+
+<mat-toolbar class="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+      <!-- <span class="menu-spacer"></span> -->
+    <div >
+      <a mat-button [routerLink]="['/rec-names']"> Rec Names </a>
+      <a mat-button [routerLink]="['/eztops-offset']">EztopsOffset </a>
+      <a mat-button [routerLink]="['/brokrecs-accounts']"> Brokrecs Accounts </a>
+    </div>
+      <span class="example-spacer"></span>
+      <a mat-button [routerLink]="['/logout']"> Logout
+        <mat-icon>power_settings_new</mat-icon>
+      </a>
+    
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode ="push">
+    <mat-nav-list  >
+      <a mat-list-item [routerLink]="'/add'">
+        <mat-icon matListIcon matTooltip="Add">add</mat-icon>
+      </a>
+      <a mat-list-item [routerLink]="'/create'">
+        <mat-icon matListIcon matTooltip="Edit">edit</mat-icon>
+      </a>
+      <a mat-list-item [routerLink]="'/update'">
+        <mat-icon matListIcon matTooltip="Update">update</mat-icon>
+      </a>
+      <a mat-list-item [routerLink]="'/delete'">
+        <mat-icon matListIcon matTooltip="Delete">delete</mat-icon>
+      </a>
+
+    </mat-nav-list>
+  </mat-sidenav  >
+  <mat-sidenav-content >
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container> 
+
+
+
