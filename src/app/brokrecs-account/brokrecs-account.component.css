@@ -7,7 +7,13 @@ font-family: Lato;
 
 .td .th {
     width: 25%;
-  }
+  } 
+
+.example-container {
+height: 100%;
+width: 100%;
+overflow: auto;
+}
 
 .mat-form-field
 {
@@ -23,14 +29,16 @@ min-width: 200px;
 
 .mat-table {
 overflow: auto;
-max-height: 500px;
+/* max-height: 500px; */
+width: 100vw;
+max-width: 100%;
 padding-left: 5%;
-padding-right: 5%;
+padding-right: 5%; 
 }
 
-.mwlResizable {
+/* .mwlResizable {
     box-sizing: border-box; 
-}
+} */
 
 mat-cell,
 mat-footer-cell,
@@ -38,13 +46,19 @@ mat-header-cell {
     width: 200px;
     word-break: break-all;
     flex: none;
-    display: block;
+    /* display: block; */
+    justify-content: center;
+    
 }
 mat-header-cell {
-    border-left: 1px solid #eee;
+    /* border-left: 1px solid #eee; */
     font-style: inherit;
     font-size: 15px;
     color: black;
+    padding-right: 12px;
+    line-height: 46px;
+    display: inline-block;
+    overflow:visible;
 }
 
 .mat-column-select {
@@ -53,32 +67,15 @@ mat-header-cell {
 
   .mat-row.highlighted
   {
-      background-color: #999;
+      background-color: lightblue;
   }
-  
 
-.mat-header-cell {
-
-    padding-left: 12px;
-    padding-right: 12px;
-    line-height: 46px;
-    display: inline-block;
-    overflow:visible;
-
-}
 
 .mat-sort-header-button {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 }
-
-.mat-cell {
-    padding-left: 12px;
-    padding-right: 12px;
-    border-left: 1px solid #eee;
-}
-
 .mat-cell {
     display: inline-block;
     vertical-align: middle;
@@ -86,6 +83,14 @@ mat-header-cell {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 12px;
+    padding-right: 12px;
+    /* border-left: 1px solid #eee; */
+}
+.mat-paginator .pageSize{
+    color: #555555;
+    font: 1em sans-serif;
+    font-size: 10px;
 }
 
     

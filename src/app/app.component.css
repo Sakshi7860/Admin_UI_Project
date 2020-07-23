@@ -15,7 +15,7 @@
   
   .navbar a:hover {
     background-color: #000;
-  }
+  } 
   
   .active {
     background-color: #4CAF50;
@@ -71,18 +71,43 @@
     color: #fff;
   }
 
+  .mat-toolbar a
+  {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+
 
   .mat-toolbar a:hover {
     background-color: #000;
   }
 .mat-sidenav{
-  background-color: white;
+  background-color: #555555;
   width: 50px;
 
 }
-.sidenav-container
+.mat-sidenav a {
+  color: white;
+  width: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+
+}  
+
+.mat-sidenav-container
 {
-  height: 100%
+  width: 100%
+}
+.mat-sidenav mat-raised-button{
+
+  color: white;
+  width: 50px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 18px;
 }
 
 /* .sidenav-container .sidenav {
@@ -156,5 +181,12 @@
   li a:hover {
     background-color: rgb(100, 0, 0);
   }  */
+
+  a.disabled {
+    color: #AAAAAA;
+    cursor: not-allowed;
+    pointer-events: none;
+    text-decoration: none;
+}
 
  

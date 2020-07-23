@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Inject } from '@angular/core';
+import {FormControl, Validators} from '@angular/forms';
+import {MatDialogRef, MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-rec-names',
@@ -7,9 +9,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecNamesComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
   }
-
 }

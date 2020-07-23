@@ -40,10 +40,10 @@
     <button mat-icon-button>
       <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
     </button>
-      <!-- <span class="menu-spacer"></span> -->
-    <div >
-      <a mat-button [routerLink]="['/rec-names']"> Rec Names </a>
-      <a mat-button [routerLink]="['/eztops-offset']">EztopsOffset </a>
+      <!-- <span class="menu-spacer">[routerLink]="['/rec-names']" </span> -->
+    <div >  
+      <a mat-button [routerLink]="['/rec-names']" [class.disabled]="true"> Rec Names </a>
+      <a mat-button [routerLink]="['/eztops-offset']" [class.disabled]="true">EztopsOffset </a>
       <a mat-button [routerLink]="['/brokrecs-accounts']"> Brokrecs Accounts </a>
     </div>
       <span class="example-spacer"></span>
@@ -54,9 +54,22 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-sidenav-container>
-  <mat-sidenav #sidenav mode ="push">
-    <mat-nav-list  >
+<mat-sidenav-container >
+  <mat-sidenav #sidenav mode ="side" >
+    <a mat-button  (click)="onReloadAdd()">
+      <mat-icon matTooltip="add">add</mat-icon>
+    </a>
+    <a mat-button (click)="editAccount()">
+      <mat-icon matTooltip="Edit">edit</mat-icon>
+     </a>
+     <a mat-button [routerLink]="['/clone'] ">
+      <mat-icon matTooltip="clone">content_copy</mat-icon>
+    </a>
+    <a mat-button (click)="deleteAccount()">
+      <mat-icon matTooltip="delete">delete</mat-icon>
+    </a>
+
+    <!-- <mat-nav-list  >
       <a mat-list-item [routerLink]="'/add'">
         <mat-icon matListIcon matTooltip="Add">add</mat-icon>
       </a>
@@ -70,9 +83,13 @@
         <mat-icon matListIcon matTooltip="Delete">delete</mat-icon>
       </a>
 
-    </mat-nav-list>
+    </mat-nav-list> -->
+
+
+
+
   </mat-sidenav  >
-  <mat-sidenav-content >
+  <mat-sidenav-content>
     <div>
       <router-outlet></router-outlet>
     </div>
